@@ -59,8 +59,8 @@ export default function ProductNewEditForm({ currentProduct }) {
     name: Yup.string().required('Name is required'),
    // images: Yup.array().min(1, 'Images is required'),
     tags: Yup.array().min(2, 'Must have at least 2 tags'),
-    category: Yup.string().required('Category is required'),
-    price: Yup.number().moreThan(0, 'Price should not be $0.00'),
+    // category: Yup.string().required('Category is required'),
+    price: Yup.number().moreThan(0, 'Price should not be $0.00 dude'),
   //   description: Yup.string().required('Description is required'),
     // not required
     taxes: Yup.number(),
